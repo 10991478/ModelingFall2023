@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: WareHouse.ma
-//Last modified: Sun, Dec 10, 2023 12:27:11 PM
+//Last modified: Sun, Dec 10, 2023 02:01:21 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -12,21 +12,21 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "68EC541C-4047-0F7A-83EA-A2BED4D8C3B9";
+fileInfo "UUID" "1DAA3A2D-41F2-7B76-A0B9-CF8872343F31";
 createNode transform -s -n "persp";
 	rename -uid "11A106D7-4CCB-0376-BAC7-FBAFD120ED82";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -24.505428338876186 10.552294445959109 158.60960151745149 ;
-	setAttr ".r" -type "double3" 5.0616472704306883 350.19999999990915 -1.5129623065035855e-16 ;
+	setAttr ".t" -type "double3" -15.946184661444612 16.440868929519524 88.246176871119516 ;
+	setAttr ".r" -type "double3" -3.9383527295638876 -14.99999999989832 2.05797031388087e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9270EEC8-43C8-4E8A-9522-B2999F66510B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 91.405915215367926;
+	setAttr ".coi" 55.467608479710762;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 54.877983190540725 19.749446048028936 91.874020992066562 ;
+	setAttr ".tp" -type "double3" 54.817426204831435 19.910156440371487 -70.817192229595079 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "F1E0E453-46AA-982B-CC75-CF987A7249F6";
@@ -7540,8 +7540,8 @@ createNode groupId -n "groupId1";
 createNode groupParts -n "groupParts1";
 	rename -uid "731CEB84-40BE-77AA-E86B-DCA2AD1DD04E";
 	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 13 "f[7:15]" "f[17:120]" "f[128:183]" "f[193:195]" "f[204:223]" "f[240:271]" "f[273:278]" "f[280]" "f[283]" "f[285:297]" "f[300:306]" "f[316:322]" "f[330:379]";
-	setAttr ".irc" -type "componentList" 13 "f[0:6]" "f[16]" "f[121:127]" "f[184:192]" "f[196:203]" "f[224:239]" "f[272]" "f[279]" "f[281:282]" "f[284]" "f[298:299]" "f[307:315]" "f[323:329]";
+	setAttr ".ic" -type "componentList" 11 "f[7:15]" "f[17:120]" "f[204:223]" "f[240:271]" "f[283]" "f[285:297]" "f[300:306]" "f[316:322]" "f[331]" "f[340:347]" "f[355:379]";
+	setAttr ".irc" -type "componentList" 11 "f[0:6]" "f[16]" "f[121:203]" "f[224:239]" "f[272:282]" "f[284]" "f[298:299]" "f[307:315]" "f[323:330]" "f[332:339]" "f[348:354]";
 createNode groupId -n "groupId2";
 	rename -uid "E9618761-4D5A-EBD8-6D80-B1947A46B14B";
 	setAttr ".ihi" 0;
@@ -7551,7 +7551,7 @@ createNode groupId -n "groupId3";
 createNode groupParts -n "groupParts2";
 	rename -uid "6ECCDEB4-4318-4293-2B8F-1C9AC1A8A1CE";
 	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 4 "f[0:6]" "f[121:127]" "f[184:191]" "f[279]";
+	setAttr ".ic" -type "componentList" 3 "f[0:6]" "f[121:191]" "f[273:280]";
 	setAttr ".irc" -type "componentList" 2 "f[224:231]" "f[272]";
 createNode groupId -n "groupId4";
 	rename -uid "934F38F0-494C-E913-8238-7A9A232741F2";
@@ -7559,10 +7559,10 @@ createNode groupId -n "groupId4";
 createNode groupParts -n "groupParts3";
 	rename -uid "C8B62166-4EB7-AD62-D303-718D359645CB";
 	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 10 "f[16]" "f[192]" "f[196:203]" "f[224:239]" "f[272]" "f[281:282]" "f[284]" "f[298:299]" "f[307:315]" "f[323:329]";
+	setAttr ".ic" -type "componentList" 11 "f[16]" "f[192:203]" "f[224:239]" "f[272]" "f[281:282]" "f[284]" "f[298:299]" "f[307:315]" "f[323:330]" "f[332:339]" "f[348:354]";
 	setAttr ".irc" -type "componentList" 5 "f[7:15]" "f[17]" "f[240:247]" "f[283]" "f[316:322]";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "C19FCDCD-4686-3C84-CC57-1791DA341FBB";
+	rename -uid "D108C8CF-4FD5-5E50-39C3-8C8EADD7182B";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
